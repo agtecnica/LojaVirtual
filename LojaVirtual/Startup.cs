@@ -50,6 +50,7 @@ namespace LojaVirtual
             }
 
             app.UseHttpsRedirection();
+            app.UseDefaultFiles();//Seta o arquivo wwwwroot/index.html como padrão de inicialização
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
